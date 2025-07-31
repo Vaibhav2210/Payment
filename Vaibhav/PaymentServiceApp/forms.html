@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Payment Gateway</title>
+</head>
+<body>
+
+
+<div class="form-center">
+
+
+<form name="myform" action="http://localhost/payu/PHP_Kit/Vaibhav/vaibhav.php" onsubmit ="return validateForm()" method="post" required>
+  <h1>
+    Payment Checkout
+  </h1>
+  <label for="firstname">First name:</label><br>
+  <input type="text" id="firstname" name="firstname" placeholder="Surbhi" value=""><br>
+
+  <label for="lastname">Last name:</label><br>
+  <input type="text" id="lastname" name="lastname" placeholder="Jadhav" value=""><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="number" id="phone" name="phone" placeholder="+91 9876543210" value=""><br>
+
+  <label for="peerBankCode">Bank Code:</label><br>
+  <input type="text" id="peerBankCode" name="peerBankCode" placeholder="SBI0007" value="SBI0007"><br>
+
+  <label for="email">Email ID:</label><br>
+  <input type="email" id="email" name="email" placeholder="surbhijadhav@gmail.com" value=""><br>
+
+  <label for="amount">Amount:</label><br>
+  <input type="number" id="amount" name="amount" placeholder="1000.00" value="1000.00"><br>  
+
+  <label for="currency">Currency:</label><br>
+  <input type="text" id="currency" name="currency" value="INR" readonly><br>  
+  
+  <input type="submit" class="btn" value="Pay now" >
+
+</form>
+</div>
+
+</body>
+</html>
